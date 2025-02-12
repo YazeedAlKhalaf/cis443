@@ -1,0 +1,83 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+% Graphics path setup
+\graphicspath{ {./images/} }
+
+% Page style configuration
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{CIS443 - Assignment 2}
+\lhead{Yazeed AlKhalaf}
+\rfoot{Page \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Remove default title headers
+\makeatletter
+\def\maketitle{
+  \begin{titlepage}
+    \centering
+    \vspace*{-1cm}
+    % University Logo
+    \includegraphics[width=0.5\textwidth]{yu-logo.png}\\[2cm]
+    
+    % Assignment Title
+    {\huge\bfseries Assignment 2\\}
+    \vspace{0.5cm}
+    {\Large EC2 Windows and S3 Bucket}\\[1.5cm]
+    
+    % Course Information
+    {\large Cloud Computing (CIS443)}\\[3cm]
+    
+    % Student Information
+    {\large\bfseries Prepared By}\\[0.3cm]
+    {\Large Yazeed AlKhalaf}\\
+    {\texttt{202211123}}\\[2cm]
+    
+    % Supervisor Information
+    {\large\bfseries Submitted To}\\[0.3cm]
+    {\Large Prof. Mohammad Mehedi Hassan}\\[2cm]
+    
+    % Date
+    {\large \today}
+    
+    \vfill
+  \end{titlepage}
+}
+\makeatother
+
+\begin{document}
+
+% Title page
+\maketitle
+
+% Table of contents page
+\thispagestyle{fancy}
+\tableofcontents
+\newpage
+
+% List of figures
+\thispagestyle{fancy}
+\listoffigures
+\newpage
+
+% Reset page counter for main content
+\setcounter{page}{1}
+
+\section{Part A: Amazon EC2 Windows VM}
+
+\section{Part B: Create Snapshots / Backups/Amazon Machine Image (AMI) Creation}
+
+\section{Part C: How to host a static website on AWS S3}
+
+\end{document}

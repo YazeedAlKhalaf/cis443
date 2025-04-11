@@ -9,6 +9,7 @@
 \usepackage{subcaption}
 \usepackage{titlesec}
 \usepackage{setspace}
+\usepackage{natbib}
 
 \graphicspath{ {./images/} }
 
@@ -67,16 +68,13 @@ Our findings indicate that the convergence of AI technologies with cloud computi
 
 \newpage
 
-\tableofcontents
-\newpage
-
 \section{Introduction}
 \subsection{Background and Contextual Framework}
 The migration to cloud computing has become an irreversible trend in enterprise IT strategy, with global adoption rates increasing by 23\% annually according to recent industry reports. This transition from traditional on-premises infrastructure to dynamic, distributed cloud environments has created both unprecedented opportunities and significant security challenges. Traditional security frameworks, designed for static network perimeters, prove increasingly inadequate against sophisticated cyber threats targeting cloud architectures.
 
 Concurrently, advancements in artificial intelligence have reached an inflection point where practical applications in cloud environments are not just feasible but demonstrably superior to conventional approaches. The intersection of these two technological domains - cloud computing and AI - represents one of the most significant developments in modern computing infrastructure.
 
-In addition, the increasing complexity of cloud security challenges has led to a surge in research focusing on AI and ML solutions. Alzoubi et al. (2024) conducted a comprehensive bibliometric analysis of over 4,000 publications, identifying key trends and challenges in this domain.
+In addition, the increasing complexity of cloud security challenges has led to a surge in research focusing on AI and ML solutions. \citet{alzoubi2024research} conducted a comprehensive bibliometric analysis of over 4,000 publications, identifying key trends and challenges in this domain.
 
 \subsection{Research Objectives and Scope}
 This comprehensive study aims to:
@@ -117,6 +115,8 @@ This comprehensive study aims to:
 
 Our research methodology combines quantitative analysis of performance metrics from deployed systems with qualitative evaluation of architectural frameworks and implementation case studies. Data sources include industry benchmarks, academic research, and proprietary implementations from leading cloud service providers.
 
+Comparative studies show AI-enhanced systems detect 85\% of novel threats compared to 60\% for signature-based methods, while reducing false positives by 67\%.
+
 \section{AI and Machine Learning in Cloud Security}
 \subsection{Evolution of Cloud Security Paradigms}
 The security landscape for cloud computing has undergone three distinct evolutionary phases:
@@ -149,7 +149,6 @@ Modern AI-driven threat detection systems employ multi-layered analytical framew
               \item Forensic capture and analysis
           \end{itemize}
 \end{itemize}
-Comparative studies show AI-enhanced systems detect 85\% of novel threats compared to 60\% for signature-based methods, while reducing false positives by 67\% (Gartner 2023).
 
 \subsection{Anomaly Detection Systems}
 Advanced anomaly detection implementations utilize:
@@ -158,7 +157,6 @@ Advanced anomaly detection implementations utilize:
     \item Spatial Analysis: Graph neural networks for relationship mapping
     \item Dimensional Analysis: Principal Component Analysis for feature reduction
 \end{itemize}
-Case studies from financial cloud implementations demonstrate detection of fraudulent transactions within 200ms of initiation, with 92\% accuracy rates.
 
 \subsection{Automated Response Frameworks}
 AI-driven response systems incorporate:
@@ -211,7 +209,8 @@ Generative AI architectures have emerged as powerful tools for cloud service enh
                     \end{itemize}
           \end{itemize}
 \end{itemize}
-Beyond centralized AI implementations, Hoffpauir et al. (2023) advocate for the growing role of edge intelligence—where lightweight ML algorithms are deployed directly on edge devices.
+
+Beyond centralized AI implementations, \citet{hoffpauir2023survey} advocate for the growing role of edge intelligence—where lightweight ML algorithms are deployed directly on edge devices.
 
 \subsection{Implementation Case Studies}
 \textbf{Synthetic Data Generation:} Financial institutions are leveraging GANs to create:
@@ -247,7 +246,7 @@ Measured outcomes show 75\% reduction in manual documentation effort and 90\% im
 
 \subsection{Operational Challenges}
 \begin{itemize}
-    \item Skill Gap: 68\% of organizations report insufficient AI expertise (MIT 2023)
+    \item Skill Gap: 68\% of organizations report insufficient AI expertise
     \item Integration Complexity: Average implementation timeline of 9--14 months
     \item Cost Structure: TCO for AI-cloud systems runs 30--45\% higher initially
 \end{itemize}
@@ -281,12 +280,9 @@ Future research should focus on:
 \end{itemize}
 
 \newpage
-\section{References}
-\begin{itemize}
-    \item Komarraju, A. (2023). Revolutionizing Cloud Services with AI/ML and Generative AI: A Comprehensive Analysis of Cutting-Edge Techniques. \textit{Tuijin Jishu/Journal of Propulsion Technology, 44}(2). \url{https://doi.org/10.52783/tjjpt.v44.i2.1117}
-    \item Sharma, H. (2024). The role of Artificial Intelligence and machine learning in Strengthening Cloud Security: A comprehensive review and analysis. \textit{IJARCCE, 13}(8). \url{https://doi.org/10.17148/ijarcce.2024.13808}
-    \item Alzoubi, Y. I., Mishra, A., \& Topcu, A. E. (2024). Research trends in deep learning and machine learning for cloud computing security. \textit{Artificial Intelligence Review, 57}(5), 132. \url{https://doi.org/10.1007/s10462-024-10776-5}
-    \item Hoffpauir, K., et al. (2023). A survey on edge intelligence and lightweight machine learning support for future applications and services. \textit{Journal of Data and Information Quality (JDIQ), 15}(2), Article 20. \url{https://doi.org/10.1145/3581759}
-\end{itemize}
+
+\nocite{*}
+\bibliographystyle{apalike}
+\bibliography{references}
 
 \end{document}

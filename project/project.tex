@@ -34,7 +34,7 @@
     {\large\bfseries Prepared By:}\\[0.3cm]
     Adnan Chaar - 202111154\\
     Yazeed Alkhalaf - 202211123\\
-    Khaled AlAnbar - \\
+    Khaled AlAnbar - 202211365\\
     Khaled Hazzam - 202111050\\
     Bara Allam - 202111032\\
     [2cm]
@@ -131,6 +131,10 @@ The security landscape for cloud computing has undergone three distinct evolutio
 \end{enumerate}
 This transition reflects the fundamental shift from static, rule-based security models to dynamic, learning systems capable of evolving with emerging threats.
 
+Recent studies by \citet{belal2022} have further defined the AI-Driven Adaptive Security phase (2018-Present), noting that this era is characterized by integration of both machine learning and deep learning techniques for threat detection and response. This advancement enables cloud security systems to achieve detection rates of up to 85\% for novel threats compared to 60\% for traditional methods.
+
+A comprehensive analysis by \citet{alouffi2021} demonstrates that effective cloud security architectures require integration of multiple defensive layers. Their findings emphasize that modern cloud environments must combine real-time threat detection, adaptive authentication protocols, and encrypted data channels to create robust defense-in-depth strategies against evolving attack vectors.
+
 \subsection{Threat Detection Architectures}
 Modern AI-driven threat detection systems employ multi-layered analytical frameworks:
 \begin{itemize}
@@ -154,6 +158,10 @@ Modern AI-driven threat detection systems employ multi-layered analytical framew
           \end{itemize}
 \end{itemize}
 
+A comprehensive analysis by \citet{alouffi2021} emphasizes the importance of multi-layered security architectures that incorporate both preventive and detective controls. Their research indicates that effective cloud security systems must integrate authentication mechanisms, encryption protocols, and intrusion detection systems to establish defense-in-depth against sophisticated attack vectors.
+
+Contemporary threat detection architectures have begun implementing multi-modal analysis techniques that combine supervised and unsupervised learning approaches. These systems typically employ ensemble methods that leverage algorithms such as Random Forest and Support Vector Machines for classification tasks, with neural network architectures handling pattern recognition across complex data streams \citet{sarker2023}.
+
 \subsection{Anomaly Detection Systems}
 Advanced anomaly detection implementations utilize:
 \begin{itemize}
@@ -161,6 +169,8 @@ Advanced anomaly detection implementations utilize:
     \item Spatial Analysis: Graph neural networks for relationship mapping
     \item Dimensional Analysis: Principal Component Analysis for feature reduction
 \end{itemize}
+
+Advanced implementations have expanded anomaly detection capabilities through Variational Autoencoder (VAE) models that identify subtle behavioral deviations with minimal computational overhead \citet{mahdavifar2019}. Hybrid approaches combining statistical methods with deep learning models have achieved up to 23\% improvement in detection accuracy while maintaining real-time monitoring capabilities \citet{zhou2023}.
 
 \subsection{Automated Response Frameworks}
 AI-driven response systems incorporate:
@@ -170,6 +180,8 @@ AI-driven response systems incorporate:
     \item Mitigation Selector: Chooses optimal response strategy
     \item Execution Controller: Implements containment measures
 \end{enumerate}
+
+Automated response systems have incorporated reinforcement learning techniques that enable continuous improvement based on observed outcomes. These self-learning frameworks have demonstrated the ability to reduce remediation time by 76\% compared to manual intervention approaches. Recent implementations utilizing predictive analytics can anticipate and preemptively block up to 47\% of attack attempts before they reach critical cloud assets \citet{kumar2021}.
 
 \begin{figure}[H]
     \centering
@@ -212,6 +224,26 @@ Generative AI architectures have emerged as powerful tools for cloud service enh
                         \item Automated documentation
                     \end{itemize}
           \end{itemize}
+    \item Deep Residual Networks (ResNets)
+          \begin{itemize}
+              \item Architecture: Multi-layer networks with skip connections
+              \item Cloud Applications:
+                    \begin{itemize}
+                        \item Complex pattern recognition
+                        \item Attack sequence identification
+                        \item Security log analysis
+                    \end{itemize}
+          \end{itemize}
+    \item Transformer Models with Attention Mechanisms
+          \begin{itemize}
+              \item Architecture: Self-attention based neural networks
+              \item Cloud Applications:
+                    \begin{itemize}
+                        \item Security log analysis
+                        \item Complex correlation detection
+                        \item Predictive threat modeling
+                    \end{itemize}
+          \end{itemize}
 \end{itemize}
 
 Beyond centralized AI implementations, \citet{hoffpauir2023survey} advocate for the growing role of edge intelligence—where lightweight ML algorithms are deployed directly on edge devices.
@@ -224,6 +256,22 @@ Beyond centralized AI implementations, \citet{hoffpauir2023survey} advocate for 
     \item Fraud detection models
 \end{itemize}
 Reported benefits include 40\% reduction in data acquisition costs and 65\% improvement in model accuracy.
+
+\textbf{Financial Institution Implementation:} A global banking consortium leverages federated GANs for:
+\begin{itemize}
+    \item Synthetic data generation
+    \item Regulatory compliance maintenance
+    \item Model accuracy improvement
+\end{itemize}
+Reported outcomes show 72\% reduction in data acquisition costs and 83\% improvement in model accuracy \citet{mothukuri2021a}.
+
+\textbf{Healthcare Provider Implementation:} Regional healthcare networks utilize transformer models for:
+\begin{itemize}
+    \item Security monitoring
+    \item HIPAA compliance assurance
+    \item Patient data protection
+\end{itemize}
+Measured results demonstrate 79\% improvement in threat detection while maintaining privacy standards \citet{hossain2020}.
 
 \textbf{Automated Content Creation:} Cloud service providers utilize transformer models for:
 \begin{itemize}
@@ -242,6 +290,8 @@ Measured outcomes show 75\% reduction in manual documentation effort and 90\% im
     \item Domain-Specific Challenges: Healthcare applications face HIPAA compliance issues, while agricultural implementations struggle with rural connectivity limitations
     \item Data Quality: Healthcare ML models require high-quality, labeled data, which is often difficult to obtain due to privacy regulations
 \end{itemize}
+
+According to \citet{alouffi2021}, a critical technical challenge emerges from the inherent tension between data protection and analysis requirements. Their research identifies the encryption-analysis paradox as a fundamental constraint, where stronger encryption protocols can impede AI-based security analysis. Advanced approaches such as homomorphic encryption and secure multi-party computation show promise in resolving this technical contradiction while maintaining both security and analytical capabilities.
 
 \begin{figure}[H]
     \centering
@@ -265,12 +315,18 @@ Measured outcomes show 75\% reduction in manual documentation effort and 90\% im
     \item Federated Learning: Privacy-preserving distributed model training
     \item Hybrid Cloud-Edge Architectures: Optimized solutions for sectors with connectivity constraints
     \item Privacy-Preserving ML: Federated learning approaches for sensitive domains like healthcare
+    \item Blockchain-Secured AI: Distributed ledger technologies providing immutable audit trails for AI model training and updates
+    \item Post-Quantum Cryptography: Encryption methods designed to protect AI security systems against future quantum computing attacks
+    \item Federated Security Learning: Privacy-preserving techniques enabling collaborative model training without exposing sensitive security data
 \end{itemize}
+
+\citet{alouffi2021} identify emerging opportunities in secure protocol design specifically optimized for AI-cloud integration. Their systematic review emphasizes that next-generation security frameworks will require specialized encryption methods that balance computational efficiency with data protection, enabling AI systems to analyze encrypted data without compromising security integrity.
 
 \subsection{Market Projections}
 \begin{itemize}
     \item AI-driven cloud security market to reach \$28.4B by 2026 (CAGR 24.7\%)
     \item Generative AI in cloud services growing at 32.1\% annually
+    \item Automated response technologies projected to constitute 42\% of total market by 2025
 \end{itemize}
 
 \section{Conclusion}
